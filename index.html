@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Advocacia Soraia de Andrade | São José dos Campos</title>
+<meta name="description" content="Advocacia Soraia de Andrade — 20 anos de experiência em Direito Previdenciário, Trabalhista, Família e Consumidor. São José dos Campos, SP."/>
+<meta name="keywords" content="advogada, previdenciário, trabalhista, família, consumidor, São José dos Campos, INSS, OAB/SP"/>
+<meta property="og:title" content="Advocacia Soraia de Andrade"/>
+<meta property="og:description" content="Experiência e comprometimento na defesa dos seus direitos. São José dos Campos, SP."/>
+<meta property="og:type" content="website"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%238C1818'/><text y='72' x='50' text-anchor='middle' font-size='64' fill='%23C0CADE'>S</text></svg>"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+<style>
+/* ═══════════════════════════════════════
+   RESET & BASE
+═══════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Plus Jakarta Sans',sans-serif;
+  background:#F4EFE8;
+  color:#1E1A14;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  cursor:default;
+}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+::selection{background:rgba(140,24,24,.18)}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:#F4EFE8}
+::-webkit-scrollbar-thumb{background:#8C1818;border-radius:2px}
+:focus-visible{outline:2px solid #8C1818;outline-offset:3px}
+
+/* ═══════════════════════════════════════
+   VARIABLES
+═══════════════════════════════════════ */
+:root{
+  --ivory:#F4EFE8;
+  --ivory-d:#EAE3D8;
+  --clay:#1A0808;    /* dark crimson — primary dark sections */
+  --clay-2:#2C0E0E;
+  --terra:#8C1818;   /* crimson — CTAs / accent (cor do logo) */
+  --terra-d:#6E1010;
+  --slate:#C0CADE;   /* azul-acinzentado — cor do logo */
+  --slate-d:#A8B4C6;
+  --warm:#1E1A14;
+  --muted:#7A6F63;
+  --border:rgba(140,24,24,.1);
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Plus Jakarta Sans',sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+
+/* ═══════════════════════════════════════
+   PROGRESS
+═══════════════════════════════════════ */
+#pbar{
+  position:fixed;top:0;left:0;height:3px;
+  background:var(--terra);z-index:9999;
+  width:0;transition:width .1s linear;
+}
+
+/* ═══════════════════════════════════════
+   FLOATING WHATSAPP
+═══════════════════════════════════════ */
+#wfloat{
+  position:fixed;bottom:32px;right:32px;z-index:600;
+  display:flex;align-items:center;gap:0;
+  background:var(--clay);color:#fff;
+  border-radius:100px;padding:14px 14px;
+  text-decoration:none;font-family:var(--sans);
+  font-size:13px;font-weight:500;
+  box-shadow:0 8px 32px rgba(140,24,24,.28);
+  transition:all .35s var(--ease);
+  overflow:hidden;white-space:nowrap;
+}
+#wfloat:hover{
+  padding:14px 22px 14px 16px;
+  box-shadow:0 16px 48px rgba(140,24,24,.38);
+  transform:translateY(-2px);
+}
+#wfloat .ft{
+  max-width:0;overflow:hidden;transition:max-width .4s var(--ease);
+  font-size:13px;margin-left:0;
+}
+#wfloat:hover .ft{max-width:100px;margin-left:10px}
+@keyframes wring{
+  0%,100%{box-shadow:0 0 0 0 rgba(140,24,24,.4)}
+  60%{box-shadow:0 0 0 12px rgba(140,24,24,0)}
+}
+#wfloat{animation:wring 3.5s ease-in-out infinite}
+@media(max-width:640px){
+  #wfloat{bottom:20px;right:20px;border-radius:50%;padding:14px}
+  #wfloat .ft{display:none}
+}
+
+/* ═══════════════════════════════════════
+   NAV
+═══════════════════════════════════════ */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  padding:26px 0;
+  transition:all .4s var(--ease);
+}
+#nav.stuck{
+  background:rgba(244,239,232,.96);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  padding:16px 0;
+  border-bottom:1px solid var(--border);
+  box-shadow:0 4px 32px rgba(0,0,0,.04);
+}
+.nav-w{
+  max-width:1200px;margin:0 auto;padding:0 40px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.nav-logo img{
+  height:72px;width:auto;object-fit:contain;display:block;
+  transition:opacity .2s;
+}
+.nav-logo img:hover{opacity:.8}
+.nav-links{display:flex;align-items:center;gap:36px}
+.nav-links a{
+  font-size:12px;letter-spacing:.08em;font-weight:500;
+  color:var(--warm);opacity:.6;transition:opacity .2s;
+  text-transform:uppercase;
+}
+.nav-links a:hover{opacity:1}
+.nav-cta{
+  background:var(--terra);color:#fff;
+  font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  padding:11px 24px;border-radius:100px;
+  transition:all .25s var(--ease);
+}
+.nav-cta:hover{background:var(--terra-d);transform:scale(1.04)}
+#nav-ham{display:none;background:none;border:none;cursor:pointer;padding:8px;line-height:0}
+/* Mobile menu */
+#mob{
+  display:none;position:fixed;inset:0;background:var(--clay);z-index:700;
+  flex-direction:column;align-items:center;justify-content:center;gap:40px;
+}
+#mob.open{display:flex}
+.mob-lnk{font-family:var(--serif);font-size:2.8rem;font-weight:300;color:#fff;font-style:italic;transition:color .2s}
+.mob-lnk:hover{color:rgba(255,255,255,.6)}
+#mob-close{position:absolute;top:24px;right:24px;background:none;border:none;cursor:pointer}
+
+/* ═══════════════════════════════════════
+   ANIMATIONS
+═══════════════════════════════════════ */
+@keyframes clipIn{from{clip-path:inset(0 100% 0 0);opacity:0}to{clip-path:inset(0 0% 0 0);opacity:1}}
+@keyframes clipUp{from{clip-path:inset(100% 0 0 0);opacity:0}to{clip-path:inset(0% 0 0 0);opacity:1}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes scaleUp{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+@keyframes slideR{from{opacity:0;transform:translateX(-20px)}to{opacity:1;transform:translateX(0)}}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes pulseRing{0%,100%{transform:scale(1);opacity:.4}50%{transform:scale(1.15);opacity:.1}}
+@keyframes lineGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* Scroll reveal utility */
+.sr{opacity:0}
+.sr.clip-in{animation:clipIn .9s var(--ease) forwards}
+.sr.clip-up{animation:clipUp .75s var(--ease) forwards}
+.sr.fade-up{animation:fadeUp .8s var(--ease) forwards}
+.sr.fade-in{animation:fadeIn .9s ease forwards}
+.sr.scale-up{animation:scaleUp .7s var(--ease) forwards}
+.sr.slide-r{animation:slideR .8s var(--ease) forwards}
+.d1{animation-delay:.06s}.d2{animation-delay:.14s}.d3{animation-delay:.24s}
+.d4{animation-delay:.36s}.d5{animation-delay:.5s}.d6{animation-delay:.66s}
+
+/* ═══════════════════════════════════════
+   BUTTONS
+═══════════════════════════════════════ */
+.btn-terra{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--terra);color:#fff;
+  font-family:var(--sans);font-size:13px;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;
+  padding:16px 34px;border-radius:100px;
+  transition:all .3s var(--ease);
+}
+.btn-terra:hover{background:var(--terra-d);transform:scale(1.04);box-shadow:0 12px 40px rgba(184,92,56,.28)}
+.btn-clay{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--clay);color:#fff;
+  font-family:var(--sans);font-size:13px;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;
+  padding:16px 34px;border-radius:100px;
+  transition:all .3s var(--ease);
+}
+.btn-clay:hover{background:var(--clay-2);transform:scale(1.04);box-shadow:0 12px 40px rgba(140,24,24,.25)}
+.btn-outline-w{
+  display:inline-flex;align-items:center;gap:10px;
+  border:1.5px solid rgba(255,255,255,.35);color:rgba(255,255,255,.8);
+  font-family:var(--sans);font-size:13px;font-weight:500;
+  letter-spacing:.06em;text-transform:uppercase;
+  padding:16px 34px;border-radius:100px;
+  transition:all .3s var(--ease);
+}
+.btn-outline-w:hover{border-color:rgba(255,255,255,.7);color:#fff}
+
+/* ═══════════════════════════════════════
+   SECTION LABELS
+═══════════════════════════════════════ */
+.lbl{
+  font-family:var(--sans);font-size:10.5px;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--terra);
+  display:inline-flex;align-items:center;gap:10px;
+}
+.lbl::before{content:'';width:20px;height:1.5px;background:var(--terra)}
+
+/* ═══════════════════════════════════════
+   HERO — LIGHT, WARM IVORY
+═══════════════════════════════════════ */
+#hero{
+  min-height:100dvh;background:var(--ivory);
+  display:flex;flex-direction:column;
+  position:relative;overflow:hidden;
+}
+.hero-spacer{height:80px;flex-shrink:0}
+
+/* Hero consultório photo */
+.hero-photo{
+  position:absolute;right:0;top:0;bottom:0;
+  width:44%;pointer-events:none;overflow:hidden;
+}
+.hero-photo img{
+  width:100%;height:100%;object-fit:cover;object-position:center;
+  display:block;
+}
+/* Fade left edge to blend with ivory bg */
+.hero-photo::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;
+  width:180px;
+  background:linear-gradient(to right,var(--ivory),transparent);
+  z-index:1;pointer-events:none;
+}
+/* Fade top edge so nav reads clean */
+.hero-photo::after{
+  content:'';position:absolute;top:0;left:0;right:0;
+  height:120px;
+  background:linear-gradient(to bottom,var(--ivory),transparent);
+  z-index:1;pointer-events:none;
+}
+
+.hero-body{
+  flex:1;display:flex;align-items:center;
+  max-width:1200px;margin:0 auto;padding:0 40px;
+  width:100%;position:relative;z-index:2;
+}
+.hero-content{max-width:560px}
+
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(140,24,24,.07);
+  border:1px solid rgba(140,24,24,.14);
+  border-radius:100px;padding:7px 16px;
+  font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  font-weight:600;color:var(--clay);margin-bottom:40px;
+}
+.hero-tag span{width:6px;height:6px;border-radius:50%;background:var(--terra);flex-shrink:0}
+
+.hero-h1{
+  font-family:var(--serif);
+  font-size:clamp(2.4rem,4vw,4.2rem);
+  font-weight:300;line-height:1.08;
+  letter-spacing:-.02em;color:var(--warm);
+  margin-bottom:32px;
+}
+.hero-h1 em{font-style:italic;color:var(--terra)}
+.hero-h1 .h1-line{display:block;overflow:hidden}
+.hero-h1 .h1-inner{display:block}
+
+.hero-sub{
+  font-size:clamp(.95rem,1.3vw,1.05rem);font-weight:300;
+  color:var(--muted);line-height:1.85;max-width:420px;
+  margin-bottom:44px;
+}
+
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:56px}
+
+.hero-trust{
+  display:flex;align-items:center;gap:0;
+  border-top:1px solid var(--border);padding-top:32px;padding-bottom:56px;
+  flex-wrap:wrap;
+}
+.htrust-item{
+  padding:0 32px 0 0;margin-right:32px;
+  border-right:1px solid var(--border);
+}
+.htrust-item:last-child{border:none;margin:0;padding:0}
+.htrust-n{
+  font-family:var(--serif);font-size:2rem;font-weight:600;
+  color:var(--clay);line-height:1;
+}
+.htrust-l{font-size:11px;letter-spacing:.08em;color:var(--muted);margin-top:4px;font-weight:400}
+
+/* ═══════════════════════════════════════
+   MARQUEE STRIP
+═══════════════════════════════════════ */
+#marquee-sec{background:var(--clay);padding:20px 0;overflow:hidden}
+.marquee-track{display:flex;white-space:nowrap}
+.marquee-inner{
+  display:flex;align-items:center;gap:0;
+  animation:marq 28s linear infinite;
+  flex-shrink:0;
+}
+.marquee-inner span{
+  font-family:var(--serif);font-size:1rem;font-style:italic;font-weight:300;
+  color:rgba(255,255,255,.55);padding:0 28px;
+}
+.marquee-inner .sep{
+  width:4px;height:4px;border-radius:50%;
+  background:var(--terra);opacity:.7;flex-shrink:0;
+}
+
+/* ═══════════════════════════════════════
+   PROPOSTA / POR QUE NOS ESCOLHER
+═══════════════════════════════════════ */
+#proposta{background:var(--ivory);padding:120px 0}
+.prop-w{max-width:1200px;margin:0 auto;padding:0 40px}
+.prop-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+
+.prop-left h2{
+  font-family:var(--serif);
+  font-size:clamp(2rem,3.8vw,3.5rem);
+  font-weight:300;line-height:1.12;
+  letter-spacing:-.02em;color:var(--warm);
+  margin-top:16px;margin-bottom:32px;
+}
+.prop-left h2 em{font-style:italic;color:var(--clay)}
+.prop-left p{font-size:14.5px;font-weight:300;color:var(--muted);line-height:1.9;max-width:380px}
+.prop-cta{margin-top:40px}
+
+.prop-right{display:flex;flex-direction:column;gap:0}
+.prop-item{
+  padding:28px 0;border-bottom:1px solid var(--border);
+  display:flex;gap:24px;align-items:flex-start;
+  transition:all .3s var(--ease);
+  position:relative;
+}
+.prop-item:first-child{border-top:1px solid var(--border)}
+.prop-item::before{
+  content:'';position:absolute;left:-40px;top:0;bottom:0;
+  width:3px;background:var(--terra);
+  transform:scaleY(0);transform-origin:top;
+  transition:transform .4s var(--ease);
+}
+.prop-item:hover::before{transform:scaleY(1)}
+.prop-item:hover{padding-left:16px}
+.prop-num{
+  font-family:var(--serif);font-size:.85rem;font-weight:600;
+  color:rgba(184,92,56,.4);min-width:28px;padding-top:2px;
+}
+.prop-txt h4{font-family:var(--sans);font-size:1.05rem;font-weight:600;color:var(--warm);margin-bottom:6px;letter-spacing:-.01em}
+.prop-txt p{font-size:13.5px;font-weight:300;color:var(--muted);line-height:1.75}
+
+/* ═══════════════════════════════════════
+   ÁREAS DE ATUAÇÃO — ACCORDION ROWS
+═══════════════════════════════════════ */
+#areas{background:var(--ivory-d);padding:120px 0}
+.areas-w{max-width:1200px;margin:0 auto;padding:0 40px}
+.areas-head{margin-bottom:64px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:24px}
+.areas-head h2{
+  font-family:var(--serif);
+  font-size:clamp(2rem,3.5vw,3.25rem);
+  font-weight:300;letter-spacing:-.02em;color:var(--warm);
+  line-height:1.1;margin-top:14px;
+}
+.areas-head h2 em{font-style:italic;color:var(--terra)}
+.areas-head p{font-size:13.5px;font-weight:300;color:var(--muted);line-height:1.8;max-width:300px}
+
+/* Area accordion */
+.area-accord{border-top:1px solid var(--border)}
+.area-item2{border-bottom:1px solid var(--border);overflow:hidden}
+.area-trigger{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:28px 0;cursor:pointer;gap:24px;
+  transition:all .3s ease;
+  background:transparent;border:none;width:100%;text-align:left;
+}
+.area-trigger:hover .area-t-name{color:var(--terra)}
+.area-trigger:hover .area-icon{background:var(--terra);color:#fff}
+.area-t-left{display:flex;align-items:center;gap:28px}
+.area-t-tag{
+  font-size:10px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;
+  color:var(--terra);background:rgba(184,92,56,.08);
+  padding:5px 12px;border-radius:100px;white-space:nowrap;flex-shrink:0;
+  width:148px;text-align:center;
+}
+.area-t-name{
+  font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,2rem);
+  font-weight:400;color:var(--warm);letter-spacing:-.01em;
+  transition:color .3s;
+}
+.area-icon{
+  width:36px;height:36px;border-radius:50%;
+  border:1.5px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;transition:all .3s;color:var(--muted);
+}
+.area-body{
+  max-height:0;overflow:hidden;
+  transition:max-height .5s var(--ease);
+}
+.area-body-inner{padding:0 0 28px 56px}
+.area-body-inner p{font-size:14px;font-weight:300;color:var(--muted);line-height:1.9;max-width:560px;margin-bottom:20px}
+.area-item2.open .area-body{max-height:200px}
+.area-item2.open .area-icon{background:var(--terra);color:#fff;border-color:var(--terra);transform:rotate(45deg)}
+.area-item2.open .area-t-name{color:var(--terra)}
+
+/* ═══════════════════════════════════════
+   SOBRE — SPLIT SCREEN
+═══════════════════════════════════════ */
+#sobre{display:grid;grid-template-columns:1fr 1fr;min-height:80vh}
+
+/* Left: forest green */
+.sobre-left{
+  background:var(--clay);padding:100px 64px;
+  display:flex;flex-direction:column;justify-content:center;
+  position:relative;overflow:hidden;
+}
+.sobre-left::before{
+  content:'"';position:absolute;top:-40px;left:32px;
+  font-family:var(--serif);font-size:clamp(16rem,25vw,28rem);
+  font-weight:700;color:rgba(255,255,255,.03);line-height:1;
+  pointer-events:none;
+}
+.sobre-lbl{color:rgba(255,255,255,.4);margin-bottom:32px}
+.sobre-lbl::before{background:rgba(255,255,255,.3)}
+.sobre-quote{
+  font-family:var(--sans);font-size:clamp(1.05rem,1.8vw,1.45rem);
+  font-weight:300;font-style:normal;color:#fff;
+  line-height:1.7;margin-bottom:40px;letter-spacing:-.01em;
+}
+.sobre-author{
+  font-family:var(--sans);font-size:12px;letter-spacing:.12em;
+  text-transform:uppercase;color:rgba(255,255,255,.4);
+  display:flex;align-items:center;gap:12px;
+}
+.sobre-author::before{content:'';width:20px;height:1px;background:var(--terra)}
+.sobre-visual{
+  margin-top:56px;
+  width:100%;aspect-ratio:3/4;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:4px;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+}
+.sobre-visual::before{
+  content:'';position:absolute;
+  top:-1px;left:-1px;right:-1px;height:3px;background:var(--terra);
+}
+.sobre-visual img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center 10%;
+  display:block;
+}
+
+/* Right: ivory */
+.sobre-right{
+  background:var(--ivory);padding:100px 64px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.sobre-right h2{
+  font-family:var(--serif);
+  font-size:clamp(1.8rem,3vw,2.8rem);
+  font-weight:300;line-height:1.1;
+  letter-spacing:-.02em;color:var(--warm);
+  margin-top:16px;margin-bottom:24px;
+}
+.sobre-right p{font-size:14px;font-weight:300;color:var(--muted);line-height:1.9;margin-bottom:16px}
+.sobre-creds{margin-top:36px;border-top:1px solid var(--border);padding-top:28px}
+.sobre-creds-lbl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:rgba(140,24,24,.4);margin-bottom:16px}
+.sobre-cred{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}
+.sobre-cred-dot{width:5px;height:5px;border-radius:50%;background:var(--terra);flex-shrink:0;margin-top:6px}
+.sobre-cred p{font-size:13px;font-weight:300;color:var(--muted);line-height:1.6}
+.sobre-cta{margin-top:40px}
+
+/* ═══════════════════════════════════════
+   DEPOIMENTOS
+═══════════════════════════════════════ */
+#depoimentos{background:var(--ivory-d);padding:120px 0}
+.depo-w{max-width:1200px;margin:0 auto;padding:0 40px}
+
+/* Featured testimonial */
+.depo-featured{
+  background:var(--clay);border-radius:6px;
+  padding:72px 80px;position:relative;overflow:hidden;
+  margin-bottom:48px;
+}
+.depo-featured::before{
+  content:'"';position:absolute;right:40px;top:-20px;
+  font-family:var(--serif);font-size:16rem;font-weight:700;
+  color:rgba(255,255,255,.04);line-height:1;pointer-events:none;
+}
+.depo-featured blockquote{
+  font-family:var(--sans);
+  font-size:clamp(1rem,1.7vw,1.35rem);
+  font-weight:300;font-style:normal;
+  color:#fff;line-height:1.8;
+  max-width:680px;position:relative;z-index:1;
+  margin-bottom:40px;
+}
+.depo-byline{display:flex;align-items:center;gap:16px;position:relative;z-index:1}
+.depo-avatar{
+  width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--terra),#96471E);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.depo-avatar span{font-family:var(--serif);font-size:1.1rem;font-weight:600;color:#fff}
+.depo-info strong{font-family:var(--sans);font-size:13px;font-weight:500;color:#fff;display:block}
+.depo-info em{font-family:var(--sans);font-size:11px;color:rgba(255,255,255,.4);font-style:normal;letter-spacing:.04em}
+
+/* Grid testimonials */
+.depo-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.depo-card{
+  background:var(--ivory);border:1px solid var(--border);
+  border-radius:6px;padding:36px 40px;
+  position:relative;overflow:hidden;
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease);
+}
+.depo-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.07)}
+.depo-card::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+  background:var(--terra);transform:scaleX(0);transform-origin:left;
+  transition:transform .4s var(--ease);
+}
+.depo-card:hover::after{transform:scaleX(1)}
+.depo-card blockquote{
+  font-family:var(--sans);font-size:.95rem;font-weight:300;
+  font-style:normal;color:var(--warm);line-height:1.8;
+  margin-bottom:28px;
+}
+.depo-card .depo-byline{gap:12px}
+.depo-card .depo-avatar{width:36px;height:36px}
+.depo-card .depo-avatar span{font-size:.9rem}
+.depo-card .depo-info strong{color:var(--warm)}
+.depo-card .depo-info em{color:var(--muted)}
+
+/* ═══════════════════════════════════════
+   COMO FUNCIONA — TIMELINE HORIZONTAL
+═══════════════════════════════════════ */
+#processo{background:var(--ivory);padding:120px 0}
+.proc-w{max-width:1200px;margin:0 auto;padding:0 40px}
+.proc-head{text-align:center;margin-bottom:80px}
+.proc-head h2{
+  font-family:var(--serif);
+  font-size:clamp(2rem,3.5vw,3.25rem);
+  font-weight:300;letter-spacing:-.02em;color:var(--warm);
+  margin-top:14px;
+}
+.proc-head h2 em{font-style:italic;color:var(--clay)}
+
+.timeline{position:relative;padding-top:32px}
+.timeline-line{
+  position:absolute;top:63px;left:16%;right:16%;
+  height:1px;background:var(--border);
+  transform-origin:left;
+}
+.timeline-fill{
+  position:absolute;top:0;left:0;height:100%;
+  background:var(--terra);width:0;
+  transition:width 1.2s var(--ease);
+}
+.timeline.in .timeline-fill{width:100%}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.step{text-align:center;padding-top:0}
+.step-dot{
+  width:62px;height:62px;border-radius:50%;
+  border:1.5px solid var(--border);background:var(--ivory);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 28px;position:relative;z-index:2;
+  transition:all .4s var(--ease);
+}
+.step:hover .step-dot{border-color:var(--terra);background:var(--terra)}
+.step-dot svg{color:var(--muted);transition:color .3s}
+.step:hover .step-dot svg{color:#fff}
+.step h3{
+  font-family:var(--sans);font-size:1.05rem;font-weight:600;
+  color:var(--warm);margin-bottom:12px;letter-spacing:-.01em;
+}
+.step p{font-size:13.5px;font-weight:300;color:var(--muted);line-height:1.8}
+
+/* ═══════════════════════════════════════
+   EQUIPE — FOREST GREEN BG
+═══════════════════════════════════════ */
+#equipe{background:var(--clay);padding:120px 0}
+.equipe-w{max-width:1200px;margin:0 auto;padding:0 40px}
+.equipe-head{margin-bottom:72px}
+.equipe-head h2{
+  font-family:var(--serif);
+  font-size:clamp(2rem,3.5vw,3.25rem);
+  font-weight:300;letter-spacing:-.02em;color:#fff;
+  margin-top:14px;
+}
+.equipe-head h2 em{font-style:italic;color:rgba(255,255,255,.45)}
+.equipe-head .lbl{color:rgba(255,255,255,.4)}
+.equipe-head .lbl::before{background:rgba(255,255,255,.3)}
+.equipe-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.team-card2{cursor:default;position:relative;overflow:hidden;border-radius:4px}
+.team-ph{
+  aspect-ratio:3/4;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+  transition:transform .5s var(--ease);
+}
+.team-card2:hover .team-ph{transform:scale(1.02)}
+.team-ph img{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  transition:transform .6s var(--ease);
+  display:block;
+}
+.team-card2:hover .team-ph img{transform:scale(1.04)}
+
+/* Terra strip on hover */
+.team-ph::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:var(--terra);transform:scaleX(0);transform-origin:left;
+  transition:transform .5s var(--ease);z-index:2;
+}
+.team-card2:hover .team-ph::after{transform:scaleX(1)}
+
+.team-info{padding:20px 0 0}
+.team-name{font-family:var(--sans);font-size:1.05rem;font-weight:600;color:#fff;margin-bottom:4px;letter-spacing:-.01em}
+.team-role{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);font-weight:500}
+.team-bio{font-size:13px;font-weight:300;color:rgba(255,255,255,.35);line-height:1.7;margin-top:10px}
+
+/* ═══════════════════════════════════════
+   VALORES — TERRACOTTA STRIP
+═══════════════════════════════════════ */
+#valores{background:var(--slate);padding:80px 0}
+.valores-w{max-width:1200px;margin:0 auto;padding:0 40px}
+.valores-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.val-item{padding:32px 32px 32px 0;border-right:1px solid rgba(26,8,8,.15)}
+.val-item:last-child{border:none;padding-right:0;padding-left:32px}
+.val-item:nth-child(2),.val-item:nth-child(3){padding:32px}
+.val-icon{
+  width:40px;height:40px;border-radius:10px;
+  background:rgba(140,24,24,.1);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:16px;flex-shrink:0;
+}
+.val-icon svg{width:20px;height:20px;stroke:var(--terra);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.val-item h4{font-family:var(--sans);font-size:1rem;font-weight:600;color:var(--clay);margin-bottom:8px;letter-spacing:-.01em}
+.val-item p{font-size:13px;font-weight:300;color:rgba(26,8,8,.58);line-height:1.7}
+
+/* ═══════════════════════════════════════
+   CTA FINAL
+═══════════════════════════════════════ */
+#cta{background:var(--clay);padding:160px 0;text-align:center;position:relative;overflow:hidden}
+.cta-deco{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:600px;height:600px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.04);pointer-events:none;
+}
+.cta-deco-2{width:360px;height:360px;border-color:rgba(255,255,255,.06)}
+.cta-w{max-width:760px;margin:0 auto;padding:0 40px;position:relative;z-index:2}
+.cta-w .lbl{color:rgba(255,255,255,.4);margin-bottom:24px;justify-content:center}
+.cta-w .lbl::before{background:rgba(255,255,255,.3)}
+.cta-h{
+  font-family:var(--serif);
+  font-size:clamp(2.4rem,5.5vw,5rem);
+  font-weight:300;line-height:1.05;
+  letter-spacing:-.03em;color:#fff;margin-bottom:24px;
+}
+.cta-h em{font-style:italic;color:rgba(255,255,255,.5)}
+.cta-sub{font-size:15px;font-weight:300;color:rgba(255,255,255,.45);line-height:1.8;margin-bottom:52px}
+.cta-btns{display:flex;flex-direction:column;align-items:center;gap:20px}
+.cta-contacts{
+  display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:center;
+  margin-top:40px;
+}
+.cta-contact{
+  display:flex;align-items:center;gap:8px;
+  font-size:12.5px;color:rgba(255,255,255,.35);
+}
+.cta-contact svg{color:rgba(255,255,255,.25);flex-shrink:0}
+
+/* ═══════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════ */
+footer{background:#0D0404;padding:44px 0;border-top:1px solid rgba(255,255,255,.05)}
+.footer-w{
+  max-width:1200px;margin:0 auto;padding:0 40px;
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:20px;
+}
+.footer-brand{font-family:var(--sans);font-size:.9rem;font-weight:500;color:rgba(255,255,255,.55);letter-spacing:.02em}
+.footer-links{display:flex;gap:24px;flex-wrap:wrap}
+.footer-links a{
+  font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(255,255,255,.22);transition:color .2s;
+}
+.footer-links a:hover{color:rgba(184,92,56,.8)}
+.footer-copy{font-size:10.5px;color:rgba(255,255,255,.2);letter-spacing:.04em}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════ */
+@media(max-width:768px){
+  .nav-links,.nav-cta-wrap{display:none}
+  #nav{background:rgba(244,239,232,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:14px 0;border-bottom:1px solid var(--border)}
+  #nav-ham{display:flex;align-items:center;gap:6px;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--warm);opacity:.7}
+  #hero{min-height:auto}
+  .hero-body{padding-top:16px;padding-bottom:0;align-items:flex-start}
+  .hero-trust{padding-bottom:32px}
+  .hero-photo{
+    position:relative;width:100%;height:280px;
+  }
+  .hero-photo::before{display:none}
+  .hero-photo::after{
+    content:'';position:absolute;
+    top:auto;bottom:0;left:0;right:0;height:160px;
+    background:linear-gradient(to top,var(--ivory) 30%,transparent);
+    z-index:1;
+  }
+  .hero-body{margin-top:-56px;position:relative;z-index:3}
+  .prop-grid{grid-template-columns:1fr}
+  #sobre{grid-template-columns:1fr}
+  .sobre-left{padding:72px 32px}
+  .sobre-right{padding:72px 32px}
+  .sobre-visual{display:block;margin-top:40px;aspect-ratio:3/4;max-height:420px}
+  .depo-grid{grid-template-columns:1fr}
+  .depo-featured{padding:48px 36px}
+  .steps{grid-template-columns:1fr}
+  .timeline-line{display:none}
+  .equipe-grid{grid-template-columns:1fr 1fr}
+  .team-ph{aspect-ratio:4/5}
+  .valores-grid{grid-template-columns:1fr 1fr;align-items:start;gap:0}
+  .val-item,
+  .val-item:nth-child(2),
+  .val-item:nth-child(3),
+  .val-item:last-child{
+    border:none;
+    border-bottom:1px solid rgba(26,8,8,.12);
+    padding:20px 12px;
+    margin:0;
+  }
+  .val-item:nth-child(odd){border-right:1px solid rgba(26,8,8,.12)}
+  .val-item:last-child,.val-item:nth-last-child(2):nth-child(odd){border-bottom:none}
+  .hero-trust{gap:20px}
+  .htrust-item{padding:0 20px 0 0;margin-right:20px}
+  .areas-body-inner{padding-left:0}
+  .area-body-inner{padding-left:0}
+  .area-t-tag{display:none}
+}
+@media(max-width:480px){
+  .equipe-grid{grid-template-columns:1fr}
+  .team-ph{aspect-ratio:3/3}
+  .depo-featured{padding:36px 28px}
+  .sobre-left,.sobre-right{padding:56px 24px}
+  .prop-w,.areas-w,.depo-w,.proc-w,.equipe-w,.valores-w,.cta-w,.footer-w,.nav-w{padding-left:24px;padding-right:24px}
+  .hero-body{padding-left:24px;padding-right:24px}
+  .hero-h1{font-size:2.8rem}
+  .hero-btns{margin-bottom:32px}
+}
+@media(min-width:769px){
+  #nav-ham{display:none}
+  .nav-cta-wrap{display:flex;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<!-- PROGRESS -->
+<div id="pbar" aria-hidden="true"></div>
+
+<!-- FLOATING WHATSAPP -->
+<a id="wfloat" href="https://wa.me/5512988880984?text=Olá%2C%20gostaria%20de%20uma%20consulta%20jurídica." target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="ft">Falar Agora</span>
+</a>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Navegação principal">
+  <div class="nav-w">
+    <a href="#hero" class="nav-logo" aria-label="Advocacia Soraia de Andrade">
+      <img src="logo.png" alt="Advocacia Soraia de Andrade"/>
+    </a>
+    <div class="nav-links" role="list">
+      <a href="#areas" role="listitem">Atuação</a>
+      <a href="#sobre" role="listitem">Sobre</a>
+      <a href="#equipe" role="listitem">Equipe</a>
+      <a href="#processo" role="listitem">Como funciona</a>
+    </div>
+    <div class="nav-cta-wrap">
+      <a href="https://wa.me/5512988880984?text=Olá%2C%20quero%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="nav-cta">Consulta Gratuita</a>
+    </div>
+    <button id="nav-ham" aria-label="Abrir menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/>
+      </svg>
+      <span>Menu</span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mob" role="dialog" aria-label="Menu de navegação" aria-modal="true">
+  <button id="mob-close" aria-label="Fechar menu">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <a href="#areas" class="mob-lnk">Atuação</a>
+  <a href="#sobre" class="mob-lnk">Sobre</a>
+  <a href="#equipe" class="mob-lnk">Equipe</a>
+  <a href="#processo" class="mob-lnk">Como funciona</a>
+  <a href="https://wa.me/5512988880984" target="_blank" rel="noopener" class="btn-terra" style="margin-top:8px">Falar no WhatsApp</a>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     HERO — LIGHT / IVORY
+══════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-spacer"></div>
+
+  <!-- Consultório photo -->
+  <div class="hero-photo" aria-hidden="true">
+    <img src="consultorio.png" alt=""/>
+  </div>
+
+  <div class="hero-body">
+    <div class="hero-content">
+
+      <div class="hero-tag sr fade-in">
+        <span></span>
+        São José dos Campos · SP · Desde 2005
+      </div>
+
+      <h1 class="hero-h1">
+        <span class="h1-line sr clip-up d1"><span class="h1-inner">Proteção jurídica</span></span>
+        <span class="h1-line sr clip-up d2"><span class="h1-inner">que resolve <em>de</em></span></span>
+        <span class="h1-line sr clip-up d3"><span class="h1-inner"><em>verdade.</em></span></span>
+      </h1>
+
+      <p class="hero-sub sr fade-up d3">
+        Mais de 20 anos defendendo os direitos de quem mais precisa. Direito Previdenciário, Trabalhista, Família e Consumidor em São José dos Campos.
+      </p>
+
+      <div class="hero-btns sr fade-up d4">
+        <a href="https://wa.me/5512988880984?text=Olá%2C%20quero%20uma%20consulta%20gratuita." target="_blank" rel="noopener" class="btn-terra">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Consulta Gratuita
+        </a>
+        <a href="#areas" class="btn-clay">Ver Especialidades</a>
+      </div>
+
+      <div class="hero-trust sr fade-up d5">
+        <div class="htrust-item">
+          <div class="htrust-n" data-target="20" data-suffix="+">20+</div>
+          <div class="htrust-l">Anos de atuação</div>
+        </div>
+        <div class="htrust-item">
+          <div class="htrust-n" data-target="5">5</div>
+          <div class="htrust-l">Áreas do direito</div>
+        </div>
+        <div class="htrust-item">
+          <div class="htrust-n">OAB</div>
+          <div class="htrust-l">Registro ativo SP</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     MARQUEE STRIP
+══════════════════════════════════════════════ -->
+<div id="marquee-sec" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-inner">
+      <span>Previdenciário</span><div class="sep"></div>
+      <span>Trabalhista</span><div class="sep"></div>
+      <span>Família & Sucessões</span><div class="sep"></div>
+      <span>Defesa do Consumidor</span><div class="sep"></div>
+      <span>Busca e Apreensão</span><div class="sep"></div>
+      <span>20 anos de experiência</span><div class="sep"></div>
+      <span>OAB/SP</span><div class="sep"></div>
+      <span>São José dos Campos</span><div class="sep"></div>
+      <span>Atendimento humanizado</span><div class="sep"></div>
+      <span>Ética e comprometimento</span><div class="sep"></div>
+    </div>
+    <!-- Duplicate for seamless loop -->
+    <div class="marquee-inner" aria-hidden="true">
+      <span>Previdenciário</span><div class="sep"></div>
+      <span>Trabalhista</span><div class="sep"></div>
+      <span>Família & Sucessões</span><div class="sep"></div>
+      <span>Defesa do Consumidor</span><div class="sep"></div>
+      <span>Busca e Apreensão</span><div class="sep"></div>
+      <span>20 anos de experiência</span><div class="sep"></div>
+      <span>OAB/SP</span><div class="sep"></div>
+      <span>São José dos Campos</span><div class="sep"></div>
+      <span>Atendimento humanizado</span><div class="sep"></div>
+      <span>Ética e comprometimento</span><div class="sep"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     POR QUE NOS ESCOLHER
+══════════════════════════════════════════════ -->
+<section id="proposta">
+  <div class="prop-w">
+    <div class="prop-grid">
+
+      <div class="prop-left">
+        <span class="lbl sr fade-in">Por que nos escolher</span>
+        <h2 class="sr fade-up d1">
+          Experiência que<br/><em>transforma vidas</em>
+        </h2>
+        <p class="sr fade-up d2">
+          Na Advocacia Soraia de Andrade, cada caso é tratado com rigor técnico e atenção humana. Não somos um escritório de volume. Somos um time que se importa com o seu resultado.
+        </p>
+        <div class="prop-cta sr fade-up d3">
+          <a href="https://wa.me/5512988880984?text=Olá%2C%20tenho%20uma%20dúvida%20e%20gostaria%20de%20orientação." target="_blank" rel="noopener" class="btn-terra">Tirar uma Dúvida Agora</a>
+        </div>
+      </div>
+
+      <div class="prop-right sr fade-up d2">
+
+        <div class="prop-item">
+          <span class="prop-num">01</span>
+          <div class="prop-txt">
+            <h4>Atendimento Humanizado</h4>
+            <p>Você é ouvido com empatia e respeito. Sem juridiquês, sem pressa. Cada situação é única e merece atenção personalizada.</p>
+          </div>
+        </div>
+
+        <div class="prop-item">
+          <span class="prop-num">02</span>
+          <div class="prop-txt">
+            <h4>Formação Internacional</h4>
+            <p>Além de especializações nacionais, a Drª Soraia possui formação em Direitos Humanos e ESG pelo Ius Gentium Conimbrigae, em Portugal.</p>
+          </div>
+        </div>
+
+        <div class="prop-item">
+          <span class="prop-num">03</span>
+          <div class="prop-txt">
+            <h4>Transparência Total</h4>
+            <p>Você acompanha cada etapa do seu caso. Sem surpresas, sem letras miúdas. Comunicação clara e direta do início ao fim.</p>
+          </div>
+        </div>
+
+        <div class="prop-item">
+          <span class="prop-num">04</span>
+          <div class="prop-txt">
+            <h4>Resultados Concretos</h4>
+            <p>Duas décadas de histórias resolvidas: aposentadorias conquistadas, direitos trabalhistas garantidos, famílias amparadas.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     ÁREAS DE ATUAÇÃO — ACCORDION
+══════════════════════════════════════════════ -->
+<section id="areas">
+  <div class="areas-w">
+
+    <div class="areas-head">
+      <div>
+        <span class="lbl sr fade-in">Especialidades</span>
+        <h2 class="sr fade-up d1">Áreas de<br/><em>Atuação</em></h2>
+      </div>
+      <p class="sr fade-up d2">Estratégia jurídica precisa para cada área do direito que impacta a sua vida.</p>
+    </div>
+
+    <div class="area-accord sr fade-up d2" role="list">
+
+      <div class="area-item2" role="listitem">
+        <button class="area-trigger" aria-expanded="false">
+          <div class="area-t-left">
+            <span class="area-t-tag">Previdenciário</span>
+            <span class="area-t-name">Direito Previdenciário</span>
+          </div>
+          <div class="area-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="area-body" role="region">
+          <div class="area-body-inner">
+            <p>Especialidade principal do escritório. Aposentadorias por tempo de contribuição, idade, invalidez e especial. Recursos administrativos junto ao INSS, revisão de benefícios e Benefício de Prestação Continuada (BPC/LOAS).</p>
+            <a href="https://wa.me/5512988880984?text=Olá%2C%20tenho%20uma%20questão%20previdenciária." target="_blank" rel="noopener" class="btn-terra" style="padding:12px 26px;font-size:12px">Falar sobre meu caso</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="area-item2" role="listitem">
+        <button class="area-trigger" aria-expanded="false">
+          <div class="area-t-left">
+            <span class="area-t-tag">Trabalhista</span>
+            <span class="area-t-name">Direito Trabalhista</span>
+          </div>
+          <div class="area-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="area-body" role="region">
+          <div class="area-body-inner">
+            <p>Rescisões indevidas, horas extras não pagas, assédio moral, verbas rescisórias, acordos trabalhistas e reclamações na Justiça do Trabalho. Defesa do trabalhador com seriedade e agilidade.</p>
+            <a href="https://wa.me/5512988880984?text=Olá%2C%20tenho%20uma%20questão%20trabalhista." target="_blank" rel="noopener" class="btn-terra" style="padding:12px 26px;font-size:12px">Falar sobre meu caso</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="area-item2" role="listitem">
+        <button class="area-trigger" aria-expanded="false">
+          <div class="area-t-left">
+            <span class="area-t-tag">Família</span>
+            <span class="area-t-name">Família e Sucessões</span>
+          </div>
+          <div class="area-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="area-body" role="region">
+          <div class="area-body-inner">
+            <p>Divórcio consensual e litigioso, guarda de filhos, pensão alimentícia, inventário, testamentos e planejamento sucessório. Atendimento sensível em momentos delicados.</p>
+            <a href="https://wa.me/5512988880984?text=Olá%2C%20preciso%20de%20orientação%20em%20direito%20de%20família." target="_blank" rel="noopener" class="btn-terra" style="padding:12px 26px;font-size:12px">Falar sobre meu caso</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="area-item2" role="listitem">
+        <button class="area-trigger" aria-expanded="false">
+          <div class="area-t-left">
+            <span class="area-t-tag">Consumidor</span>
+            <span class="area-t-name">Defesa do Consumidor</span>
+          </div>
+          <div class="area-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="area-body" role="region">
+          <div class="area-body-inner">
+            <p>Cobranças indevidas, negativação injusta no SPC/Serasa, contratos abusivos, produtos defeituosos e descumprimento de oferta. Seus direitos como consumidor, defendidos com firmeza.</p>
+            <a href="https://wa.me/5512988880984?text=Olá%2C%20tenho%20um%20problema%20de%20consumidor." target="_blank" rel="noopener" class="btn-terra" style="padding:12px 26px;font-size:12px">Falar sobre meu caso</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="area-item2" role="listitem">
+        <button class="area-trigger" aria-expanded="false">
+          <div class="area-t-left">
+            <span class="area-t-tag">Veicular</span>
+            <span class="area-t-name">Busca e Apreensão de Veículo</span>
+          </div>
+          <div class="area-icon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </button>
+        <div class="area-body" role="region">
+          <div class="area-body-inner">
+            <p>Defesa em ações de busca e apreensão de veículos propostas por bancos e financeiras. Análise do contrato, purgação de mora e suspensão da ação. Não perca seu carro sem uma defesa.</p>
+            <a href="https://wa.me/5512988880984?text=Olá%2C%20recebi%20uma%20ação%20de%20busca%20e%20apreensão." target="_blank" rel="noopener" class="btn-terra" style="padding:12px 26px;font-size:12px">Falar sobre meu caso</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SOBRE — SPLIT SCREEN
+══════════════════════════════════════════════ -->
+<section id="sobre">
+
+  <!-- Left: forest green -->
+  <div class="sobre-left">
+    <span class="lbl sobre-lbl sr fade-in">Sobre a advogada</span>
+    <blockquote class="sobre-quote sr fade-up d1">
+      "Oferecer serviços jurídicos de alta qualidade com ética e comprometimento, visando a proteção dos direitos de cada cliente."
+    </blockquote>
+    <cite class="sobre-author sr fade-in d2">Drª Soraia de Andrade</cite>
+
+    <div class="sobre-visual sr scale-up d3">
+      <img src="soraia 2.jpg" alt="Drª Soraia de Andrade"/>
+    </div>
+  </div>
+
+  <!-- Right: ivory -->
+  <div class="sobre-right">
+    <span class="lbl sr fade-in">Trajetória</span>
+    <h2 class="sr fade-up d1">Drª Soraia<br/>de Andrade</h2>
+    <p class="sr fade-up d2">Licenciada desde 2005, formada pela Universidade Vale do Paraíba em São José dos Campos. Construiu uma trajetória de excelência técnica aliada ao atendimento genuinamente humanizado.</p>
+    <p class="sr fade-up d3">Atua com especializações em Direito Previdenciário, Trabalhista e Direitos Humanos, incluindo formação internacional em Portugal, garantindo que cada cliente tenha acesso à melhor defesa possível.</p>
+
+    <div class="sobre-creds sr fade-up d3">
+      <div class="sobre-creds-lbl">Formação e especializações</div>
+      <div class="sobre-cred">
+        <div class="sobre-cred-dot"></div>
+        <p>Univap – Graduação em Direito, São José dos Campos</p>
+      </div>
+      <div class="sobre-cred">
+        <div class="sobre-cred-dot"></div>
+        <p>IEPREV – Especialização em Direito Previdenciário</p>
+      </div>
+      <div class="sobre-cred">
+        <div class="sobre-cred-dot"></div>
+        <p>Especialização em Direito e Processo do Trabalho</p>
+      </div>
+      <div class="sobre-cred">
+        <div class="sobre-cred-dot"></div>
+        <p>Ius Gentium Conimbrigae, Portugal – Direitos Humanos e ESG</p>
+      </div>
+    </div>
+
+    <div class="sobre-cta sr fade-up d4">
+      <a href="https://wa.me/5512988880984?text=Olá%2C%20gostaria%20de%20falar%20com%20a%20Drª%20Soraia." target="_blank" rel="noopener" class="btn-terra">Falar com a Drª Soraia</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     COMO FUNCIONA — TIMELINE
+══════════════════════════════════════════════ -->
+<section id="processo">
+  <div class="proc-w">
+
+    <div class="proc-head">
+      <span class="lbl sr fade-in" style="justify-content:center">Como funciona</span>
+      <h2 class="sr fade-up d1">Da dúvida ao <em>resultado</em></h2>
+    </div>
+
+    <div class="timeline sr fade-in d2">
+      <div class="timeline-line">
+        <div class="timeline-fill"></div>
+      </div>
+      <div class="steps">
+
+        <div class="step sr fade-up d2">
+          <div class="step-dot">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3>Primeiro Contato</h3>
+          <p>Você nos conta o seu caso pelo WhatsApp. Escutamos com atenção, sem julgamento e com sigilo total desde o primeiro momento.</p>
+        </div>
+
+        <div class="step sr fade-up d3">
+          <div class="step-dot">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <h3>Análise Jurídica</h3>
+          <p>Nosso time avalia seu caso com rigor técnico e identifica a estratégia mais eficiente para defender seus direitos.</p>
+        </div>
+
+        <div class="step sr fade-up d4">
+          <div class="step-dot">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>Resultado Concreto</h3>
+          <p>Atuamos com dedicação até a resolução. Você é informado de cada passo e não enfrenta surpresas no caminho.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:56px" class="sr fade-up d4">
+      <a href="https://wa.me/5512988880984?text=Olá%2C%20quero%20iniciar%20meu%20atendimento." target="_blank" rel="noopener" class="btn-terra">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Iniciar Agora pelo WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     EQUIPE — GREEN BG
+══════════════════════════════════════════════ -->
+<section id="equipe">
+  <div class="equipe-w">
+
+    <div class="equipe-head">
+      <span class="lbl equipe-head sr fade-in">Nossa equipe</span>
+      <h2 class="sr fade-up d1">Time de <em>excelência</em></h2>
+    </div>
+
+    <div class="equipe-grid">
+
+      <div class="team-card2 sr fade-up d1">
+        <div class="team-ph">
+          <img src="soraia 1.jpg" alt="Drª Soraia de Andrade" style="object-position:center 15%"/>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Drª Soraia de Andrade</div>
+          <div class="team-role">Fundadora · OAB/SP · Desde 2005</div>
+          <div class="team-bio">Especialista em Previdenciário, Trabalhista e Família. Formação internacional em Portugal.</div>
+        </div>
+      </div>
+
+      <div class="team-card2 sr fade-up d2">
+        <div class="team-ph">
+          <img src="luana.jpg" alt="Luana Santos" style="object-position:center 10%"/>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Luana Santos</div>
+          <div class="team-role">Advogada Associada</div>
+          <div class="team-bio">Dedicada a garantir os melhores resultados jurídicos para cada cliente do escritório.</div>
+        </div>
+      </div>
+
+      <div class="team-card2 sr fade-up d3">
+        <div class="team-ph">
+          <img src="barbara.jpg" alt="Bárbara Dias" style="object-position:center 10%"/>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Bárbara Dias</div>
+          <div class="team-role">Advogada Associada</div>
+          <div class="team-bio">Comprometida com excelência técnica e atendimento personalizado a cada caso.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     VALORES — TERRACOTTA STRIP
+══════════════════════════════════════════════ -->
+<section id="valores">
+  <div class="valores-w">
+    <div class="valores-grid sr fade-in">
+      <div class="val-item">
+        <div class="val-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h4>Humanismo</h4>
+        <p>Empatia e respeito genuíno em cada atendimento.</p>
+      </div>
+      <div class="val-item">
+        <div class="val-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <h4>Transparência</h4>
+        <p>Comunicação honesta e clara em cada etapa do processo.</p>
+      </div>
+      <div class="val-item">
+        <div class="val-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h4>Excelência Técnica</h4>
+        <p>Atualização constante e estratégia jurídica precisa.</p>
+      </div>
+      <div class="val-item">
+        <div class="val-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h4>Ética e Lealdade</h4>
+        <p>Comprometimento total e incondicional com seus interesses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CTA FINAL — FOREST GREEN
+══════════════════════════════════════════════ -->
+<section id="cta">
+  <div class="cta-deco" aria-hidden="true"></div>
+  <div class="cta-deco cta-deco-2" aria-hidden="true"></div>
+
+  <div class="cta-w">
+    <span class="lbl sr fade-in">Entre em contato</span>
+    <h2 class="cta-h sr fade-up d1">
+      Seus direitos<br/>
+      não podem<br/>
+      <em>esperar.</em>
+    </h2>
+    <p class="cta-sub sr fade-up d2">
+      Uma dúvida jurídica respondida hoje pode mudar o seu amanhã. Nossa equipe responde com agilidade e atenção.
+    </p>
+    <div class="cta-btns sr fade-up d3">
+      <a href="https://wa.me/5512988880984?text=Olá%2C%20preciso%20de%20ajuda%20jurídica." target="_blank" rel="noopener" class="btn-terra" style="font-size:14px;padding:18px 42px">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        (12) 98888-0984 · Falar Agora
+      </a>
+    </div>
+    <div class="cta-contacts sr fade-in d4">
+      <div class="cta-contact">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Av. Andrômeda, 693 · Jd. Satélite · SJC/SP
+      </div>
+      <div class="cta-contact">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.86 9.11a19.79 19.79 0 01-3.07-8.65A2 2 0 012.77.5h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l.94-.94a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        (12) 3937-5578
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     DEPOIMENTOS
+══════════════════════════════════════════════ -->
+<section id="depoimentos">
+  <div class="depo-w">
+
+    <div style="margin-bottom:48px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:24px">
+      <div>
+        <span class="lbl sr fade-in">Depoimentos</span>
+        <h2 class="sr fade-up d1" style="font-family:var(--serif);font-size:clamp(2rem,3.5vw,3.25rem);font-weight:300;letter-spacing:-.02em;color:var(--warm);line-height:1.1;margin-top:14px">O que nossos<br/><em style="font-style:italic;color:var(--terra)">clientes dizem</em></h2>
+      </div>
+      <p class="sr fade-up d2" style="font-size:13.5px;font-weight:300;color:var(--muted);line-height:1.8;max-width:280px">Histórias reais de pessoas cujos direitos foram protegidos e garantidos.</p>
+    </div>
+
+    <div class="depo-featured sr scale-up d2">
+      <blockquote>
+        "Meu divórcio foi o momento mais difícil da minha vida. A Drª Soraia e sua equipe cuidaram de tudo com uma sensibilidade impressionante. Conseguimos um acordo justo que protegeu os meus filhos. Hoje olho para trás com gratidão e alívio."
+      </blockquote>
+      <div class="depo-byline">
+        <div class="depo-avatar"><span>A</span></div>
+        <div class="depo-info">
+          <strong>Ana Cristina B.</strong>
+          <em>Família e Sucessões · São José dos Campos</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="depo-grid">
+      <div class="depo-card sr fade-up d2">
+        <blockquote>"Após anos lutando sozinho com o INSS, encontrei na Drª Soraia alguém que realmente entende do assunto. Consegui minha aposentadoria por invalidez em meses. Recomendo de olhos fechados."</blockquote>
+        <div class="depo-byline">
+          <div class="depo-avatar"><span>M</span></div>
+          <div class="depo-info">
+            <strong>Maria Aparecida S.</strong>
+            <em>Direito Previdenciário</em>
+          </div>
+        </div>
+      </div>
+      <div class="depo-card sr fade-up d3">
+        <blockquote>"Fui demitido de forma injusta e não sabia o que fazer. O escritório me orientou desde o primeiro contato pelo WhatsApp. O processo foi resolvido e recebi tudo que eu tinha direito. Profissionais sérios."</blockquote>
+        <div class="depo-byline">
+          <div class="depo-avatar"><span>R</span></div>
+          <div class="depo-info">
+            <strong>Roberto Lima C.</strong>
+            <em>Direito Trabalhista</em>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     LOCALIZAÇÃO
+══════════════════════════════════════════════ -->
+<section id="localizacao" style="background:var(--ivory-d)">
+  <div style="max-width:1200px;margin:0 auto;padding:80px 40px;display:grid;grid-template-columns:1fr 1.8fr;gap:64px;align-items:center" class="loc-grid">
+
+    <!-- Info -->
+    <div class="sr fade-up">
+      <span class="lbl" style="display:inline-flex;margin-bottom:20px">Localização</span>
+      <h2 style="font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.75rem);font-weight:300;letter-spacing:-.02em;color:var(--warm);line-height:1.1;margin-bottom:28px">Onde<br/><em style="font-style:italic;color:var(--terra)">estamos</em></h2>
+
+      <address style="font-style:normal;display:flex;flex-direction:column;gap:6px;margin-bottom:28px">
+        <span style="font-family:var(--sans);font-size:15px;font-weight:500;color:var(--warm)">Av. Andrômeda, 693</span>
+        <span style="font-family:var(--sans);font-size:14px;font-weight:300;color:var(--muted)">Espaço Andrômeda, Jd. Satélite</span>
+        <span style="font-family:var(--sans);font-size:14px;font-weight:300;color:var(--muted)">São José dos Campos – SP · CEP 12.230-000</span>
+      </address>
+
+      <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:32px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--terra)" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.86 9.11a19.79 19.79 0 01-3.07-8.65A2 2 0 012.77.5h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l.94-.94a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          <span style="font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:300">(12) 3937-5578</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="color:var(--terra)" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span style="font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:300">(12) 98888-0984</span>
+        </div>
+      </div>
+
+      <a href="https://maps.google.com/maps?q=Av+Andrômeda+693+Jardim+Satélite+São+José+dos+Campos+SP" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);border-bottom:1px solid rgba(140,24,24,.25);padding-bottom:3px;transition:border-color .3s" onmouseenter="this.style.borderColor='var(--terra)'" onmouseleave="this.style.borderColor='rgba(140,24,24,.25)'">
+        Abrir no Google Maps
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+
+    <!-- Map -->
+    <div class="sr scale-up d1" style="border-radius:4px;overflow:hidden;box-shadow:0 8px 48px rgba(0,0,0,.1);position:relative">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--terra);z-index:1"></div>
+      <iframe
+        src="https://maps.google.com/maps?q=Av+Andr%C3%B4meda+693+Jardim+Sat%C3%A9lite+S%C3%A3o+Jos%C3%A9+dos+Campos+SP+Brasil&t=&z=16&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="400"
+        style="border:0;display:block;filter:grayscale(15%)"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Localização do escritório Advocacia Soraia de Andrade"
+        aria-label="Mapa do escritório">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<style>
+@media(max-width:768px){
+  .loc-grid{grid-template-columns:1fr!important;padding:56px 24px!important}
+}
+</style>
+
+<footer>
+  <div class="footer-w">
+    <div class="footer-brand">Advocacia Soraia de Andrade · OAB/SP</div>
+    <div class="footer-links">
+      <a href="#areas">Atuação</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#processo">Processo</a>
+      <a href="https://wa.me/5512988880984" target="_blank" rel="noopener" style="color:rgba(184,92,56,.6)">WhatsApp</a>
+    </div>
+    <div class="footer-copy">© 2025 · São José dos Campos, SP</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+
+// ── Progress bar ──────────────
+const pbar = document.getElementById('pbar');
+window.addEventListener('scroll', ()=>{
+  const s = window.pageYOffset, h = document.documentElement.scrollHeight - window.innerHeight;
+  pbar.style.width = h > 0 ? (s/h*100)+'%' : '0%';
+}, {passive:true});
+
+// ── Nav stuck ────────────────
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', ()=>{
+  nav.classList.toggle('stuck', window.scrollY > 60);
+}, {passive:true});
+
+// ── Mobile menu ───────────────
+const ham = document.getElementById('nav-ham');
+const mob = document.getElementById('mob');
+const mclose = document.getElementById('mob-close');
+const openMob = ()=>{ mob.classList.add('open'); document.body.style.overflow='hidden'; ham.setAttribute('aria-expanded','true'); };
+const closeMob = ()=>{ mob.classList.remove('open'); document.body.style.overflow=''; ham.setAttribute('aria-expanded','false'); };
+ham.addEventListener('click', openMob);
+mclose.addEventListener('click', closeMob);
+mob.querySelectorAll('a').forEach(a=>a.addEventListener('click', closeMob));
+
+// ── Scroll Reveal ─────────────
+const obs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const el = e.target;
+    const ez = 'cubic-bezier(.22,1,.36,1)';
+    if(el.classList.contains('clip-in'))       el.style.animation = `clipIn .9s ${ez} ${getDelay(el)} forwards`;
+    else if(el.classList.contains('clip-up'))  el.style.animation = `clipUp .75s ${ez} ${getDelay(el)} forwards`;
+    else if(el.classList.contains('fade-up'))  el.style.animation = `fadeUp .8s ${ez} ${getDelay(el)} forwards`;
+    else if(el.classList.contains('fade-in'))  el.style.animation = `fadeIn .9s ease ${getDelay(el)} forwards`;
+    else if(el.classList.contains('scale-up')) el.style.animation = `scaleUp .7s ${ez} ${getDelay(el)} forwards`;
+    else if(el.classList.contains('slide-r'))  el.style.animation = `slideR .8s ${ez} ${getDelay(el)} forwards`;
+    obs.unobserve(el);
+  });
+}, {threshold:0.1, rootMargin:'0px 0px -48px 0px'});
+
+function getDelay(el){
+  if(el.classList.contains('d1')) return '.05s';
+  if(el.classList.contains('d2')) return '.13s';
+  if(el.classList.contains('d3')) return '.23s';
+  if(el.classList.contains('d4')) return '.35s';
+  if(el.classList.contains('d5')) return '.49s';
+  if(el.classList.contains('d6')) return '.65s';
+  return '0s';
+}
+
+document.querySelectorAll('.sr').forEach(el=>{
+  el.style.animationDelay = getDelay(el);
+  obs.observe(el);
+});
+
+// ── Timeline animate ──────────
+const timeline = document.querySelector('.timeline');
+if(timeline){
+  const tobs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); tobs.unobserve(e.target); }});
+  }, {threshold:.4});
+  tobs.observe(timeline);
+}
+
+// ── Counter animation ─────────
+function counter(el){
+  const target = parseInt(el.dataset.target, 10);
+  const suffix = el.dataset.suffix || '';
+  const dur = 1600, step = target/(dur/16);
+  let v = 0;
+  const t = setInterval(()=>{
+    v = Math.min(v+step, target);
+    el.textContent = Math.floor(v) + suffix;
+    if(v >= target) clearInterval(t);
+  }, 16);
+}
+const cobs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ counter(e.target); cobs.unobserve(e.target); }});
+}, {threshold:.6});
+document.querySelectorAll('[data-target]').forEach(el=>cobs.observe(el));
+
+// ── Area accordion ────────────
+document.querySelectorAll('.area-trigger').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const item = btn.closest('.area-item2');
+    const isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.area-item2.open').forEach(i=>i.classList.remove('open'));
+    document.querySelectorAll('.area-trigger').forEach(b=>b.setAttribute('aria-expanded','false'));
+    // Open clicked if was closed
+    if(!isOpen){
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+    }
+  });
+});
+
+// ── Keypress accordion ────────
+document.querySelectorAll('.area-trigger').forEach(btn=>{
+  btn.addEventListener('keydown', e=>{
+    if(e.key==='Enter'||e.key===' '){ e.preventDefault(); btn.click(); }
+  });
+});
+
+})();
+</script>
+</body>
+</html>
